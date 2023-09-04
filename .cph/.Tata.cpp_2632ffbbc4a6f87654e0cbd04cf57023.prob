@@ -1,0 +1,1 @@
+{"name":"Local: Tata","url":"/Users/daipayandas/Documents/2D Faster/Tata.cpp","tests":[{"id":1693125396319,"input":"5\n4 2 5 1 3\n1 2 4 5 3","output":"4 5 2 3 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/daipayandas/Documents/2D Faster/Tata.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: binary","url":"/Users/daipayandas/Documents/2D Faster/binary.cpp","tests":[{"id":1693415887881,"input":"7\n1 2\n0111101","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/daipayandas/Documents/2D Faster/binary.cpp","group":"local","local":true}

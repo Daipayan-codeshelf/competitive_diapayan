@@ -71,4 +71,10 @@
     "json.schemas": [
     
     ],
+    "files.associations": {
+      "ostream": "cpp",
+      "iostream": "cpp",
+      "vector": "cpp",
+      "ios": "cpp"
+    },
   }

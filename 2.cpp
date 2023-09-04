@@ -15,25 +15,24 @@ ll lcm(ll a, ll b) { return (b / gcd(a, b)) * a; }
 #define si(x) (x).size()
 const ll mod = 1e9+7;
 
-void printF(int ind,vec &v,int arr[],int n){
-  if(ind==n){
-    for(int i=0;i<si(v);i++){
-      cout<<v[i]<<" ";
+void solve(int ind,int n,vec &ans,vec &v){
+  if(ind>=n){
+    for(auto i:ans){
+      cout<<i<<" ";
     }
     cout<<endl;
     return;
   }
-  v.pb(arr[ind]);
-  printF(ind+1,v,arr,n);
-  v.pop_back();
-  printF(ind+1,v,arr,n);
+  ans.push_back(v[ind]);
+  solve(ind+1,n,ans,v);
+  ans.pop_back();
+  solve(ind+1,n,ans,v);
 }
 
 int main(){
   ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0) ;
-  int n=3;
-  int arr[]={3,1,2};
-  vec v;
-  printF(0,v,arr,n);
+  vec v={1,3,4,2,1};
+  vec ans;
+  solve(0,5,ans,v);
   return 0;
 }

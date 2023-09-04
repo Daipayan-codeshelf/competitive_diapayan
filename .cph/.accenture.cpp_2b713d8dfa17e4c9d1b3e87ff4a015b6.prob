@@ -1,0 +1,1 @@
+{"name":"Local: accenture","url":"/Users/daipayandas/Documents/2D Faster/accenture.cpp","tests":[{"id":1692627673469,"input":"5\n1 3 8 48 10","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/daipayandas/Documents/2D Faster/accenture.cpp","group":"local","local":true}
