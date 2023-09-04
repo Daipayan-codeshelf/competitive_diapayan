@@ -1,28 +1,39 @@
 #include <bits/stdc++.h>
-#include <iostream>
-using namespace std;
 
-#define ll long long
-#define pb push_back
-#define un unordered_map<int,int>
-#define all(x) (x).begin(), (x).end()
-ll gcd(ll a, ll b) { return((b == 0) ? a : gcd(b, a % b)); }
-ll lcm(ll a, ll b) { return (b / gcd(a, b)) * a; }
-#define vec vector<int>
-#define vll vector<long long>
-#define str string
-#define form(i,n) for(int i = 0; i < n; i++)
-#define si(x) (x).size()
-const ll mod = 1e9+7;
+using i64 = long long;
 
-
-
-int main(){
-  ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0) ;
-  int test_case;
-  cin>>test_case;
-  while(test_case--){
+void solve() {
+    int n;
+    std::cin >> n;
     
-  }
-  return 0;
+    std::string t;
+    std::cin >> t;
+    
+    std::string s;
+    for (int i = n - 1; i >= 0; ) {
+        if (t[i] == '0') {
+            int x = (t[i - 2] - '0') * 10 + t[i - 1] - '0' - 1;
+            s += 'a' + x;
+            i -= 3;
+        } else {
+            s += 'a' + t[i] - '0' - 1;
+            i--;
+        }
+    }
+    std::reverse(s.begin(), s.end());
+    std::cout << s << "\n";
+}
+
+int main() {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+    
+    int t;
+    std::cin >> t;
+    
+    while (t--) {
+        solve();
+    }
+    
+    return 0;
 }
